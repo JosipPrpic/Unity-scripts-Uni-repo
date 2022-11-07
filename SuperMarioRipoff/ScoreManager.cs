@@ -20,7 +20,8 @@ public class ScoreManager : MonoBehaviour
     public void ChangeScore(int coinValue)
     {
         score += coinValue;
-        if (score == 8)
+        //10 coins in total
+        if (score == 10)
         {
             text.text = "You Won! \nAchieved score: " + score.ToString();
         }
